@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px 40px;
+}
+
+.header-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#modo-oscuro-btn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    padding: 20px;
+    display: block;
+    min-height: calc(100vh - 200px); 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.boton-menu {
+    background-color: #eee;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.boton-menu:hover {
+    background-color: #ddd;
+}
+
+.datos-personales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dato-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+.dato-item strong {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+#formulario-contacto {
+    margin-top: 20px;
+}
+.form-grupo {
+    margin-bottom: 15px;
+}
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.boton-enviar {
+    background-color: #111;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.boton-enviar:hover {
+    background-color: #333;
+}
+.error-msg {
+    color: red;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.boton-github {
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body.modo-oscuro {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+body.modo-oscuro .card {
+    background-color: transparent;
+    box-shadow: none;
+}
+body.modo-oscuro .boton-menu {
+    background-color: #444;
+    color: #f4f4f4;
+}
+body.modo-oscuro .dato-item {
+    background-color: #444;
+}
+body.modo-oscuro .dato-item strong {
+    color: #aaa;
+}
+body.modo-oscuro #modo-oscuro-btn {
+    border-color: #111;
+    background-color: #444;
+}
+body.modo-oscuro .form-grupo input,
+body.modo-oscuro .form-grupo textarea {
+    background-color: #555;
+    border-color: #777;
+    color: white;
+}
+
+body.modo-oscuro {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+body.modo-oscuro #modo-oscuro-btn {
+    border-color: #111;
+    background-color: #444;
+}
+body.modo-oscuro .boton-menu {
+    background-color: #444;
+    color: #f4f4f4;
+}
+body.modo-oscuro .dato-item {
+    background-color: #444;
+}
+body.modo-oscuro .dato-item strong {
+    color: #aaa;
+}
+body.modo-oscuro .form-grupo input,
+body.modo-oscuro .form-grupo textarea {
+    background-color: #555;
+    border-color: #777;
+    color: white;
+}
+#exito-mensaje {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .header-contenido, footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .boton-menu {
+        text-align: center;
+    }
+}

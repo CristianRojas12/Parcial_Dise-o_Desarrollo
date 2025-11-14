@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Ficha Personal - Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-contenido">
+            <div>
+                <h1>Ficha Personal</h1>
+                <p>Perfil de estudiante</p>
+            </div>
+            <button id="modo-oscuro-btn">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="perfil-header">
+                <img src="imagenes/Foto_Cristian.png" alt="Foto de Cristian" class="foto-perfil">
+                <h2>Cristian Rojas</h2>
+            </div>
+            
+            <nav class="menu">
+                <a href="index.html" class="boton-menu">HOME</a>
+                <a href="https://cristianrojas12.github.io/LOCAL_COMERCIAL/RAM_web/index/index.html" target="_blank" class="boton-menu">Local Comercial</a>
+                <a href="https://cristianrojas12.github.io/Primer_Trabajo_DesaWeb/index.html" target="_blank" class="boton-menu">Fan Page</a>
+                <a href="contacto.html" class="boton-menu">Contacto</a>
+            </nav>
+
+            <form id="formulario-contacto">
+                <h3>Contacto</h3>
+                <div class="form-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <small class="error-msg" id="error-nombre"></small>
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                    <small class="error-msg" id="error-email"></small>
+                </div>
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    <small class="error-msg" id="error-mensaje"></small>
+                </div>
+                <button type="submit" class="boton-enviar">Enviar</button>
+                <p id="exito-mensaje"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Todos los derechos reservados</p>
+        <a href="https://github.com/CristianRojas12/Parcial_Dise-o_Desarrollo" target="_blank" class="boton-github">Ver en GitHub</a>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
